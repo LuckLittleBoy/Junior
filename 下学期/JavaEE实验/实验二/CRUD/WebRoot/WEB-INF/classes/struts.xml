@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" namespace="/action" extends="struts-default">
+		<action name="StudentAdd" class="com.stu.CRUD.serverlet.AddStudent">
+			<result name="Success">../StudentList.jsp</result>
+			<result name="Error">../Error.jsp</result>
+		</action>
+		<action name="StudentDelete" class="com.stu.CRUD.serverlet.DeleteStudent">
+			<result name="Success">../StudentList.jsp</result>
+			<result name="Error">../Error.jsp</result>
+		</action>
+		<action name="StudentEdit" class="com.stu.CRUD.serverlet.EditStudent">
+			<result name="Success">../StudentList.jsp</result>
+			<result name="Error">../Error.jsp</result>
+		</action>
+	</package>
+</struts>    

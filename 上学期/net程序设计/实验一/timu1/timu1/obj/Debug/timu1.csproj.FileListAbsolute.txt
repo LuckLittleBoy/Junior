@@ -1,0 +1,6 @@
+E:\vs2013Code\timu1\timu1\bin\Debug\timu1.exe.config
+E:\vs2013Code\timu1\timu1\bin\Debug\timu1.exe
+E:\vs2013Code\timu1\timu1\bin\Debug\timu1.pdb
+E:\vs2013Code\timu1\timu1\obj\Debug\timu1.csprojResolveAssemblyReference.cache
+E:\vs2013Code\timu1\timu1\obj\Debug\timu1.exe
+E:\vs2013Code\timu1\timu1\obj\Debug\timu1.pdb

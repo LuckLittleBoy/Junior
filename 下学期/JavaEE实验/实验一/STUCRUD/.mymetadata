@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="STUCRUD"
+  id="myeclipse.1492672512774"
+  context-root="/STUCRUD"
+  j2ee-spec="6.0"
+  archive="STUCRUD.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

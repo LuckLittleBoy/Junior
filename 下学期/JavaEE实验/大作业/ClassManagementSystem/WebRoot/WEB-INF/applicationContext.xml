@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="net.sourceforge.jtds.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:jtds:sqlserver://127.0.0.1:1433/ClassManagementSystem">
+		</property>
+		<property name="username" value="sa"></property>
+		<property name="password" value="meng19950628"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.SybaseDialect
+				</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+				<value>com/cms/model/Grade.hbm.xml</value>
+				<value>com/cms/model/Course.hbm.xml</value>
+				<value>com/cms/model/ClassInfo.hbm.xml</value>
+				<value>com/cms/model/Student.hbm.xml</value></list>
+		</property>
+	</bean>
+	
+	<bean id="stuDao" class="com.cms.student.dao.StudentDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="stuService" class="com.cms.student.service.StudentService">
+		<property name="stuDao">
+			<ref bean="stuDao" />
+		</property>
+	</bean>
+	<bean id="loginAction" class="com.cms.student.action.LoginAction">
+		<property name="stuService">
+			<ref bean="stuService" />
+		</property>
+	</bean>
+	<bean id="classInfodao" class="com.cms.classInfo.dao.ClassInfoDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="classService" class="com.cms.classInfo.service.ClassInfoService">
+		<property name="classInfodao">
+			<ref bean="classInfodao" />
+		</property>
+	</bean>
+	<bean id="classAction" class="com.cms.student.action.ClassAction">
+		<property name="classService">
+			<ref bean="classService" />
+		</property>
+	</bean>
+	<bean id="operateclass" class="com.cms.classInfo.action.OperateClassAction">
+		<property name="classService">
+			<ref bean="classService" />
+		</property>
+	</bean>
+	
+	<bean id="stuAction" class="com.cms.student.action.StudentAction">
+		<property name="stuService">
+			<ref bean="stuService" />
+		</property>
+	</bean>
+	<bean id="operatestu" class="com.cms.student.action.OperateStudentAction">
+		<property name="stuService">
+			<ref bean="stuService" />
+		</property>
+	</bean>
+	
+	<bean id="courseDao" class="com.cms.course.dao.CourseDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="courseService" class="com.cms.course.service.CourseService">
+		<property name="courseDao">
+			<ref bean="courseDao" />
+		</property>
+	</bean>
+	<bean id="courseAction" class="com.cms.course.action.CourseAction">
+		<property name="courseService">
+			<ref bean="courseService" />
+		</property>
+	</bean>
+	<bean id="operatecourse" class="com.cms.course.action.OperateCourseAction">
+		<property name="courseService">
+			<ref bean="courseService" />
+		</property>
+	</bean>
+	
+	<bean id="gradeDao" class="com.cms.grade.dao.GradeDao">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="gradeService" class="com.cms.grade.service.GradeService">
+		<property name="gradeDao">
+			<ref bean="gradeDao" />
+		</property>
+	</bean>
+	<bean id="gradeAction" class="com.cms.grade.action.GradeAction">
+		<property name="gradeService">
+			<ref bean="gradeService" />
+		</property>
+	</bean>
+	<bean id="operategrade" class="com.cms.grade.action.OperateGradeAction">
+		<property name="gradeService">
+			<ref bean="gradeService" />
+		</property>
+	</bean>
+</beans>

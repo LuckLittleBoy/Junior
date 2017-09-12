@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="action_websearch">MyBook</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string-array name="item_array">
+        <item>用户管理</item>
+        <item>书籍管理</item>
+        <item>书籍分类管理</item>
+        <item>读书笔记</item>
+    </string-array>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stu.mybook">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/book3"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity"
+            android:theme="@style/MyAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".UserActivity">
+        </activity>
+        <activity android:name=".AddUserActivity">
+        </activity>
+        <activity android:name=".UpdateUserActivity">
+        </activity>
+        <activity android:name=".AddBookActivity">
+        </activity>
+        <activity android:name=".UpdateBookActivity">
+        </activity>
+        <activity android:name=".AddClassifyActivity">
+        </activity>
+        <activity android:name=".UpdateClassifyActivity">
+        </activity>
+        <activity android:name=".AddNotesActivity">
+        </activity>
+        <activity android:name=".UpdateNotesActivity">
+        </activity>
+        <activity android:name=".UserNotesActivity">
+        </activity>
+        <activity android:name=".LookNotesActivity">
+        </activity>
+        <activity android:name=".LookNoteContentActivity">
+        </activity>
+    </application>
+
+</manifest>

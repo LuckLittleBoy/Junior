@@ -1,0 +1,5 @@
+E:\vs2013Code\timu4\timu4\bin\Debug\timu4.exe.config
+E:\vs2013Code\timu4\timu4\bin\Debug\timu4.exe
+E:\vs2013Code\timu4\timu4\bin\Debug\timu4.pdb
+E:\vs2013Code\timu4\timu4\obj\Debug\timu4.exe
+E:\vs2013Code\timu4\timu4\obj\Debug\timu4.pdb

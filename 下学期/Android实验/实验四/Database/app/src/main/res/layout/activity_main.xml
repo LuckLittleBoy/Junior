@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.stu.database.MainActivity">
+
+    <TextView
+        android:text="个人爱好："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUserName"
+        android:layout_marginTop="55dp"
+        android:id="@+id/tvUserHobby" />
+
+    <TextView
+        android:text="用户名："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tvUserName"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvUserHobby"
+        android:layout_alignEnd="@+id/tvUserHobby" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/etUserName"
+        android:hint="请输入用户名"
+        android:layout_alignBaseline="@+id/tvUserName"
+        android:layout_alignBottom="@+id/tvUserName"
+        android:layout_toRightOf="@+id/tvUserName"
+        android:layout_toEndOf="@+id/tvUserName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/etUserHobby"
+        android:hint="请输入你的爱好"
+        android:layout_alignBaseline="@+id/tvUserHobby"
+        android:layout_alignBottom="@+id/tvUserHobby"
+        android:layout_alignLeft="@+id/etUserName"
+        android:layout_alignStart="@+id/etUserName" />
+
+    <Button
+        android:text="确定"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="62dp"
+        android:id="@+id/btnSure"
+        style="@android:style/Widget.Button.Inset"
+        android:layout_below="@+id/etUserHobby"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnSure_Click"/>
+</RelativeLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+
+ 	<package name="user" namespace="/" extends="struts-default,json-default">
+ 	
+    	<action name="loginaction" class="com.cms.student.action.LoginAction">
+             <result name="success" type="redirect">/index.jsp</result>
+             <result name="error" type="redirect">/Login.html</result>
+    	</action>
+    	
+    	<action name="registerAction" class="com.cms.student.action.RegisterAction">
+             <result name="success" type="redirect">/Login.html</result>
+             <result name="error" type="redirect">/Register.jsp</result>
+    	</action>
+    	
+    	<action name="classAction" class="com.cms.student.action.ClassAction" method="classexecute">
+    	</action>
+    	<action name="operateclass" class="com.cms.classInfo.action.OperateClassAction">
+             <result name="success" type="redirect">/index.jsp</result>
+             <result name="error" type="redirect">/index.jsp</result>
+    	</action>
+    	
+    	<action name="studentAction" class="com.cms.student.action.StudentAction" method="stuexecute">
+    	</action>
+    	<action name="operatestu" class="com.cms.student.action.OperateStudentAction">
+             <result name="success" type="redirect">/index.jsp</result>
+             <result name="error" type="redirect">/index.jsp</result>
+    	</action>
+    	
+    	<action name="courseAction" class="com.cms.course.action.CourseAction" method="courexecute">
+    	</action>
+    	<action name="operatecourse" class="com.cms.course.action.OperateCourseAction">
+             <result name="success" type="redirect">/index.jsp</result>
+             <result name="error" type="redirect">/index.jsp</result>
+    	</action>
+    	
+    	<action name="gradeAction" class="com.cms.grade.action.GradeAction" method="gradeexecute">
+    	</action>
+    	<action name="operategrade" class="com.cms.grade.action.OperateGradeAction">
+    	</action>
+    </package>
+</struts>    

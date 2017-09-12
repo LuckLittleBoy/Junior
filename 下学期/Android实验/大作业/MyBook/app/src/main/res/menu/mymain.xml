@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.stu.mybook.UserActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="退出系统"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="关于"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/exit"
+        android:title="切换账号"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/calendar"
+        android:icon="@drawable/user"
+        android:orderInCategory="90"
+        android:title="个人资料"
+        app:showAsAction="ifRoom" />
+</menu>

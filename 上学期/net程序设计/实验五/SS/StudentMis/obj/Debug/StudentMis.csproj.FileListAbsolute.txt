@@ -1,0 +1,9 @@
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\bin\Debug\StudentMis.exe.config
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\bin\Debug\StudentMis.exe
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\bin\Debug\StudentMis.pdb
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.csprojResolveAssemblyReference.cache
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.Login.resources
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.Properties.Resources.resources
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.csproj.GenerateResource.Cache
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.exe
+D:\ProjectsTest\C#WorkSpace\SS\StudentMis\obj\Debug\StudentMis.pdb

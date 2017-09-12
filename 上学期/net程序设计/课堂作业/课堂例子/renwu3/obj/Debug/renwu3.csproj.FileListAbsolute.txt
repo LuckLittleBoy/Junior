@@ -1,0 +1,6 @@
+E:\vs2013Code\renwu3\renwu3\bin\Debug\renwu3.exe.config
+E:\vs2013Code\renwu3\renwu3\bin\Debug\renwu3.exe
+E:\vs2013Code\renwu3\renwu3\bin\Debug\renwu3.pdb
+E:\vs2013Code\renwu3\renwu3\obj\Debug\renwu3.csprojResolveAssemblyReference.cache
+E:\vs2013Code\renwu3\renwu3\obj\Debug\renwu3.exe
+E:\vs2013Code\renwu3\renwu3\obj\Debug\renwu3.pdb

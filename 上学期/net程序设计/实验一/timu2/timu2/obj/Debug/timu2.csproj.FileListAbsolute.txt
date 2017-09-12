@@ -1,0 +1,5 @@
+E:\vs2013Code\timu2\timu2\bin\Debug\timu2.exe.config
+E:\vs2013Code\timu2\timu2\bin\Debug\timu2.exe
+E:\vs2013Code\timu2\timu2\bin\Debug\timu2.pdb
+E:\vs2013Code\timu2\timu2\obj\Debug\timu2.exe
+E:\vs2013Code\timu2\timu2\obj\Debug\timu2.pdb

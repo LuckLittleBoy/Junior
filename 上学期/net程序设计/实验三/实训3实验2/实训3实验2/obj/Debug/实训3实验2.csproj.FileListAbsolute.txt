@@ -1,0 +1,9 @@
+E:\vs2013Code\实训3实验2\实训3实验2\bin\Debug\实训3实验2.exe.config
+E:\vs2013Code\实训3实验2\实训3实验2\bin\Debug\实训3实验2.exe
+E:\vs2013Code\实训3实验2\实训3实验2\bin\Debug\实训3实验2.pdb
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.Form1.resources
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.Properties.Resources.resources
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.csproj.GenerateResource.Cache
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.exe
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.pdb
+E:\vs2013Code\实训3实验2\实训3实验2\obj\Debug\实训3实验2.csprojResolveAssemblyReference.cache
